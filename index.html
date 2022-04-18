@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game </title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- GAME BODY -->
+    <div id="screen">
+        <div id="gameBoardStyleWrapper">
+            <div id="gameBoard">
+                <div id="snakeGrid"></div>
+            </div>
+        </div>
+        <div id="game-setttings">
+            <h5 class="heading">Only For PC/Laptop</h5>
+            <div id="scoreBoard" class="game-pane tile">
+                <p id="score">Welcome!</p>
+                <p id="high-score"></p>
+            </div>
+            <div id="game-controls" class="game-pane tile">
+                <button class="btn fuchsia" id="do-play" onclick="handleToggleGamePlay()">Play Game</button>
+                <div class="sub-option">
+                    <p>Game Speed:</p>
+                    <button class="btn blue" id="game-speed" onClick="handleChangeGameSpeed()">Medium</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+
+<script src="./js/index.js"></script>
+
+</html>
